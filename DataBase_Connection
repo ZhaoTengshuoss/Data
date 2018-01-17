@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class DBUtil {
 	public  static  Connection getConnection() {
-		
+/		
 			//1 加载驱动
 			try {
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -22,11 +22,10 @@ public class DBUtil {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
+						
 			
 			
-			
-			
-		/*String user = "root";
+		String user = "root";
 		String password = "root";
 		String url = "jdbc:mysql://localhost:3306/p_math";
 		Connection connection = null;
@@ -37,10 +36,10 @@ public class DBUtil {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return connection;*/
+		return connection;
 		
 			
-			Connection con=null;
+			/*Connection con=null;
 			String driver = "com.mysql.jdbc.Driver";
 			String username = System.getenv("ACCESSKEY");
 			String password = System.getenv("SECRETKEY");
@@ -52,7 +51,7 @@ public class DBUtil {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			return con;
+			return con;*///搭载新浪云更改
 			
 			
 			
